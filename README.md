@@ -53,4 +53,6 @@ The main motive of the project is to create an end to end attendance management 
         java -jar 'path of the jar'
       For eg : java -jar /home/test/Downloads/attendance/target/attendance-0.0.1-SNAPSHOT.jar
     
+    Database:-
+    Create one database called-'db' in your mysql instance and hibernate will automatically create the tables
 
