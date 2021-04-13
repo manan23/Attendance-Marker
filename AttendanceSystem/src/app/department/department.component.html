@@ -1,0 +1,73 @@
+<app-headerdept></app-headerdept>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    #customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+    </style>
+</head>
+<body>
+
+<p style="text-shadow: 2px 2px 5px red;margin-left:35%;padding-top:30px;color:indigo;font-size: 40px;font-weight: bolder;" >Teacher Details</p><br><br>
+<div >
+    <!--<span style="float: left; padding-left:100px; ">{{title}}</span>
+    -->
+    <table style="margin-left:500px;width: 500px;" id="customers">
+        <tr >
+          <th>Details</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Teacher ID </td>
+          <td>{{employee.employeeId}}</td>
+        </tr>
+        <tr>
+          <td>Teacher Name</td>
+          <td>{{employee.name}} </td>
+        </tr>
+        <tr>
+          <td>Class Teacher </td>
+          <td>{{employee.standard}} </td>
+        </tr>
+        <tr>
+          <td>Teacher Phone No.</td>
+          <td>{{employee.phno}} </td>
+        </tr>
+        <tr>
+          <td>Teacher Email</td>
+          <td>{{employee.mailId}} </td>
+        </tr>
+        <br>
+        <br>
+        <br>
+        <br>
+        
+      </table>
+    
+
+    </div>
+   
+      </body>
+      </html>
+      

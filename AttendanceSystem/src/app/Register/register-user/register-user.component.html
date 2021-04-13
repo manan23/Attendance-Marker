@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Attendance Management System</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<script src="app.js"></script>
+</head>
+
+<body>
+	<div class="container" style="width:550px">
+		<div style="text-align:center;color:blue">
+			<h3><b>User Registraion Form</b></h3>
+		</div>
+		<div >
+			
+			<form role="form" class="well" >
+				<div class="form-group">
+					<label for="userType"> User Type </label>
+					<select name="userType" id="userType" class="form-control" [(ngModel)]="userType" style=" height:30px;" placeholder="Select User Type">
+						<option value="Student">Student</option>
+						<option value="Teacher">Teacher</option>
+					</select>
+				</div>
+
+				<div class="form-group">
+					<label for="userId"> User Id </label>
+					<input type="text" name="userId" id="userId" class="form-control" placeholder="Enter User Id "
+					[(ngModel)]="userId">
+				</div>
+
+				<div class="form-group">
+					<label for="userName"> User Name: </label>
+					<input type="text" name="userName" id="userName" class="form-control" placeholder="Enter Name "
+					[(ngModel)]="userName">
+				</div>
+
+				<div class="form-group">
+					<label for="userStandard"> User Class/Standard </label>
+					<input type="text" name="userStandard" id="userStandard" class="form-control" placeholder="Enter Class/Standard "
+					[(ngModel)]="userStandard">
+				</div>
+
+
+				<div class="form-group">
+					<label for="userPassword"> Password: </label>
+					<input type="password" name="userPassword" id="userPassword" class="form-control" placeholder="Enter Password "
+					[(ngModel)]="userPassword">
+				</div>
+				<div class="form-group">
+					<label for="userPhone"> Phone: </label>
+					<input type="text" name="userPhone" id="userPhone" class="form-control" placeholder="Enter Phone "
+					[(ngModel)]="userPhone">
+				</div>
+				<div class="form-group">
+					<label for="userEmail"> Email Id </label>
+					<input type="email" name="userEmail" id="userEmail" class="form-control" placeholder="Enter Email id "
+					[(ngModel)]="userEmail">
+				</div>
+				<br>
+				<input style="margin-left:25%; width:50%" type="button" class="btn btn-primary" (click)=registerUser() class="btn btn-primary"
+					value="Submit">
+			</form>
+
+		</div>
+	</div>
+</body>
+
+</html>

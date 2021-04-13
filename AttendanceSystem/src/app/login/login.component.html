@@ -1,0 +1,17 @@
+<div id="check" class="container">
+  <br><br><br>
+  <h1 style="text-shadow: 2px 2px 5px rgb(105, 40, 40);font-size: 80px; color: rgb(85, 85, 243);font-weight: bold;">Attendance Management</h1>
+  <div style="padding-top: 100px;">
+    User Name : <input type="text" name="userId" [(ngModel)]="userId" required><br><br><br>
+
+    Password : &nbsp;&nbsp;<input type="password" name="password" [(ngModel)]="password" required><br><br><br>
+  </div>
+  <button style="margin-left: 10px;" (click)=checkLogin() class="btn btn-success">
+    Login
+  </button>
+
+  <button style="margin-left: 30px;" (click)=registerForm() class="btn btn-success">
+    Sign Up
+  </button>
+
+</div>

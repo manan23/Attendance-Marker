@@ -1,0 +1,118 @@
+<app-headerdept></app-headerdept>
+
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.rt {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+#customers {
+      font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #customers td, #customers th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #customers tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #customers tr:hover {background-color: #ddd;}
+    
+    #customers th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #4CAF50;
+      color: white;
+    }
+</style>
+<body><br><br>
+<h3 style="text-shadow: 2px 2px 5px red;font-size:40px;font-weight: bolder;color: blue;margin-left: 550px;">Student Details</h3>
+<br>
+<div class="rt" style="margin-left:500px;width: 400px;">
+
+ 
+    <label for="lname">STUDENT NAME :</label>
+    <select id="lname" [(ngModel)]="emp" name="emp" required>
+      <option *ngFor="let e of employeename" [value]="e.employeeId">{{e.employeeId}}</option>     
+    </select><br>
+    <input (click)=submit() type="submit" value="Submit">
+  
+</div>
+<div *ngIf="show"><br>
+<p style="margin-left:550px;color:indigo;font-size: 40px;font-weight: bolder;" >Student Details</p>
+<div >
+    <!--<span style="float: left; padding-left:100px; ">{{title}}</span>
+    -->
+    <table style="float: left;
+    margin: 0 1.5%;
+    margin-left: 450px;
+    width: 40%; " id="customers">
+        <tr >
+          <th>Details</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>Student ID </td>
+          <td>{{employee.employeeId}}</td>
+        </tr>
+        <tr>
+          <td>Student Name</td>
+          <td>{{employee.name}} </td>
+        </tr>
+        <tr>
+          <td>Student Class</td>
+          <td>{{employee.standard}} </td>
+        </tr>
+        <tr>
+          <td>Student Phone</td>
+          <td>{{employee.phno}} </td>
+        </tr>
+        <tr>
+          <td>Student Email</td>
+          <td>{{employee.mailId}} </td>
+        </tr>
+        <br>
+        <br>
+        <br>
+        <br>
+      </table>
+     
+
+
+    </div>
+   </div>
+  
+      </body>
+      </html>
+      
